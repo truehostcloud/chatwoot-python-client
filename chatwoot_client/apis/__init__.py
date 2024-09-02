@@ -1,0 +1,34 @@
+from __future__ import absolute_import
+
+# flake8: noqa
+
+# import apis into api package
+from chatwoot_client.apis.account_agent_bots_api import AccountAgentBotsApi
+from chatwoot_client.apis.account_users_api import AccountUsersApi
+from chatwoot_client.apis.accounts_api import AccountsApi
+from chatwoot_client.apis.agent_bots_api import AgentBotsApi
+from chatwoot_client.apis.agents_api import AgentsApi
+from chatwoot_client.apis.automation_rule_api import AutomationRuleApi
+from chatwoot_client.apis.csat_survey_page_api import CSATSurveyPageApi
+from chatwoot_client.apis.canned_response_api import CannedResponseApi
+from chatwoot_client.apis.canned_responses_api import CannedResponsesApi
+from chatwoot_client.apis.contact_api import ContactApi
+from chatwoot_client.apis.contacts_api import ContactsApi
+from chatwoot_client.apis.contacts_api_api import ContactsAPIApi
+from chatwoot_client.apis.conversation_assignment_api import ConversationAssignmentApi
+from chatwoot_client.apis.conversation_labels_api import ConversationLabelsApi
+from chatwoot_client.apis.conversations_api import ConversationsApi
+from chatwoot_client.apis.conversations_api_api import ConversationsAPIApi
+from chatwoot_client.apis.custom_attributes_api import CustomAttributesApi
+from chatwoot_client.apis.custom_filters_api import CustomFiltersApi
+from chatwoot_client.apis.help_center_api import HelpCenterApi
+from chatwoot_client.apis.inbox_api_api import InboxAPIApi
+from chatwoot_client.apis.inboxes_api import InboxesApi
+from chatwoot_client.apis.integrations_api import IntegrationsApi
+from chatwoot_client.apis.messages_api import MessagesApi
+from chatwoot_client.apis.messages_api_api import MessagesAPIApi
+from chatwoot_client.apis.profile_api import ProfileApi
+from chatwoot_client.apis.reports_api import ReportsApi
+from chatwoot_client.apis.teams_api import TeamsApi
+from chatwoot_client.apis.users_api import UsersApi
+from chatwoot_client.apis.webhooks_api import WebhooksApi

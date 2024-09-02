@@ -1,0 +1,7 @@
+{
+   "packageName": "chatwoot_client",
+   "apiVersion": "1.0.0",
+   "outputDir": "./chatwoot",
+   "modelPackage": "models",
+   "apiPackage": "apis"
+}
