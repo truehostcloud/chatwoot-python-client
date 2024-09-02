@@ -2,6 +2,7 @@
    "packageName": "chatwoot_client",
    "projectName": "chatwoot-python-client",
    "apiVersion": "1.0.0",
+   "packageVersion": "1.0.0.1",
    "outputDir": "./chatwoot",
    "modelPackage": "models",
    "apiPackage": "apis"

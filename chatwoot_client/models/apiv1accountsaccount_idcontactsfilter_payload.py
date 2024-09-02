@@ -31,25 +31,22 @@ class Apiv1accountsaccountIdcontactsfilterPayload(object):
         'attribute_key': 'str',
         'filter_operator': 'str',
         'values': 'list[str]',
-        'query_operator': 'str',
-        'enum': 'object'
+        'query_operator': 'str'
     }
 
     attribute_map = {
         'attribute_key': 'attribute_key',
         'filter_operator': 'filter_operator',
         'values': 'values',
-        'query_operator': 'query_operator',
-        'enum': 'enum'
+        'query_operator': 'query_operator'
     }
 
-    def __init__(self, attribute_key=None, filter_operator=None, values=None, query_operator=None, enum=None):  # noqa: E501
+    def __init__(self, attribute_key=None, filter_operator=None, values=None, query_operator=None):  # noqa: E501
         """Apiv1accountsaccountIdcontactsfilterPayload - a model defined in Swagger"""  # noqa: E501
         self._attribute_key = None
         self._filter_operator = None
         self._values = None
         self._query_operator = None
-        self._enum = None
         self.discriminator = None
         if attribute_key is not None:
             self.attribute_key = attribute_key
@@ -59,8 +56,6 @@ class Apiv1accountsaccountIdcontactsfilterPayload(object):
             self.values = values
         if query_operator is not None:
             self.query_operator = query_operator
-        if enum is not None:
-            self.enum = enum
 
     @property
     def attribute_key(self):
@@ -105,7 +100,7 @@ class Apiv1accountsaccountIdcontactsfilterPayload(object):
         :param filter_operator: The filter_operator of this Apiv1accountsaccountIdcontactsfilterPayload.  # noqa: E501
         :type: str
         """
-        allowed_values = ["equal_to", "not_equal_to", "contains", "does_not_contain"]  # noqa: E501
+        allowed_values = ["equal_to", "not_equal_to", "contains", "does_not_contain", "is_present", "is_not_present", "is_greater_than", "is_less_than", "days_before"]  # noqa: E501
         if filter_operator not in allowed_values:
             raise ValueError(
                 "Invalid value for `filter_operator` ({0}), must be one of {1}"  # noqa: E501
@@ -157,29 +152,14 @@ class Apiv1accountsaccountIdcontactsfilterPayload(object):
         :param query_operator: The query_operator of this Apiv1accountsaccountIdcontactsfilterPayload.  # noqa: E501
         :type: str
         """
+        allowed_values = ["AND", "OR"]  # noqa: E501
+        if query_operator not in allowed_values:
+            raise ValueError(
+                "Invalid value for `query_operator` ({0}), must be one of {1}"  # noqa: E501
+                .format(query_operator, allowed_values)
+            )
 
         self._query_operator = query_operator
-
-    @property
-    def enum(self):
-        """Gets the enum of this Apiv1accountsaccountIdcontactsfilterPayload.  # noqa: E501
-
-
-        :return: The enum of this Apiv1accountsaccountIdcontactsfilterPayload.  # noqa: E501
-        :rtype: object
-        """
-        return self._enum
-
-    @enum.setter
-    def enum(self, enum):
-        """Sets the enum of this Apiv1accountsaccountIdcontactsfilterPayload.
-
-
-        :param enum: The enum of this Apiv1accountsaccountIdcontactsfilterPayload.  # noqa: E501
-        :type: object
-        """
-
-        self._enum = enum
 
     def to_dict(self):
         """Returns the model properties as a dict"""
