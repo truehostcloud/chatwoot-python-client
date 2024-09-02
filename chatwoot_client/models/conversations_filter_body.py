@@ -28,7 +28,7 @@ class ConversationsFilterBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'payload': 'list[Apiv1accountsaccountIdconversationsfilterPayload]'
+        'payload': 'list[Apiv1accountsaccountIdcontactsfilterPayload]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ConversationsFilterBody(object):
 
 
         :return: The payload of this ConversationsFilterBody.  # noqa: E501
-        :rtype: list[Apiv1accountsaccountIdconversationsfilterPayload]
+        :rtype: list[Apiv1accountsaccountIdcontactsfilterPayload]
         """
         return self._payload
 
@@ -58,7 +58,7 @@ class ConversationsFilterBody(object):
 
 
         :param payload: The payload of this ConversationsFilterBody.  # noqa: E501
-        :type: list[Apiv1accountsaccountIdconversationsfilterPayload]
+        :type: list[Apiv1accountsaccountIdcontactsfilterPayload]
         """
 
         self._payload = payload

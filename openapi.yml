@@ -2636,6 +2636,11 @@ paths:
                         - not_equal_to
                         - contains
                         - does_not_contain
+                        - is_present
+                        - is_not_present
+                        - is_greater_than
+                        - is_less_than
+                        - days_before
                       values:
                         type: array
                         description: array of the attribute values to filter
