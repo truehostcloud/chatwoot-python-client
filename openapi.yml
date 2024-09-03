@@ -4858,13 +4858,18 @@ components:
           properties: {}
           description: The content attributes for each content_type
         message_type:
-          type: string
+          type: integer
           description: The type of the message
           enum:
-          - incoming
-          - outgoing
-          - activity
-          - template
+            - 0
+            - 1
+            - 2
+            - 3
+          x-enum-mapping:
+            0: incoming
+            1: outgoing
+            2: activity
+            3: template
         created_at:
           type: integer
           description: The time at which message was created

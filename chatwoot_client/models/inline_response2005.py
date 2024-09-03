@@ -32,7 +32,7 @@ class InlineResponse2005(GenericId):
         'content': 'str',
         'content_type': 'str',
         'content_attributes': 'object',
-        'message_type': 'str',
+        'message_type': 'int',
         'created_at': 'int',
         'private': 'bool',
         'attachment': 'object',
@@ -170,7 +170,7 @@ class InlineResponse2005(GenericId):
         The type of the message  # noqa: E501
 
         :return: The message_type of this InlineResponse2005.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._message_type
 
@@ -181,9 +181,9 @@ class InlineResponse2005(GenericId):
         The type of the message  # noqa: E501
 
         :param message_type: The message_type of this InlineResponse2005.  # noqa: E501
-        :type: str
+        :type: int
         """
-        allowed_values = ["incoming", "outgoing", "activity", "template"]  # noqa: E501
+        allowed_values = [0, 1, 2, 3]  # noqa: E501
         if message_type not in allowed_values:
             raise ValueError(
                 "Invalid value for `message_type` ({0}), must be one of {1}"  # noqa: E501
