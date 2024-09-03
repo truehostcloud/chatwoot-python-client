@@ -28,7 +28,6 @@ class Conversation(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'int',
         'messages': 'list[Message]',
         'account_id': 'int',
         'inbox_id': 'int',
@@ -44,7 +43,6 @@ class Conversation(object):
     }
 
     attribute_map = {
-        'id': 'id',
         'messages': 'messages',
         'account_id': 'account_id',
         'inbox_id': 'inbox_id',
@@ -59,9 +57,8 @@ class Conversation(object):
         'custom_attributes': 'custom_attributes'
     }
 
-    def __init__(self, id=None, messages=None, account_id=None, inbox_id=None, status=None, timestamp=None, contact_last_seen_at=None, agent_last_seen_at=None, last_activity_at=None, last_non_activity_message=None, unread_count=None, additional_attributes=None, custom_attributes=None):  # noqa: E501
+    def __init__(self, messages=None, account_id=None, inbox_id=None, status=None, timestamp=None, contact_last_seen_at=None, agent_last_seen_at=None, last_activity_at=None, last_non_activity_message=None, unread_count=None, additional_attributes=None, custom_attributes=None):  # noqa: E501
         """Conversation - a model defined in Swagger"""  # noqa: E501
-        self._id = None
         self._messages = None
         self._account_id = None
         self._inbox_id = None
@@ -75,8 +72,6 @@ class Conversation(object):
         self._additional_attributes = None
         self._custom_attributes = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
         if messages is not None:
             self.messages = messages
         if account_id is not None:
@@ -101,29 +96,6 @@ class Conversation(object):
             self.additional_attributes = additional_attributes
         if custom_attributes is not None:
             self.custom_attributes = custom_attributes
-
-    @property
-    def id(self):
-        """Gets the id of this Conversation.  # noqa: E501
-
-        ID of the conversation  # noqa: E501
-
-        :return: The id of this Conversation.  # noqa: E501
-        :rtype: int
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this Conversation.
-
-        ID of the conversation  # noqa: E501
-
-        :param id: The id of this Conversation.  # noqa: E501
-        :type: int
-        """
-
-        self._id = id
 
     @property
     def messages(self):

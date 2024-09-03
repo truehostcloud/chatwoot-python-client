@@ -29,7 +29,6 @@ class AllOfconversationListDataPayloadItems(GenericId):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'int',
         'messages': 'list[Message]',
         'account_id': 'int',
         'inbox_id': 'int',
@@ -48,7 +47,6 @@ class AllOfconversationListDataPayloadItems(GenericId):
         swagger_types.update(GenericId.swagger_types)
 
     attribute_map = {
-        'id': 'id',
         'messages': 'messages',
         'account_id': 'account_id',
         'inbox_id': 'inbox_id',
@@ -66,9 +64,8 @@ class AllOfconversationListDataPayloadItems(GenericId):
     if hasattr(GenericId, "attribute_map"):
         attribute_map.update(GenericId.attribute_map)
 
-    def __init__(self, id=None, messages=None, account_id=None, inbox_id=None, status=None, timestamp=None, contact_last_seen_at=None, agent_last_seen_at=None, last_activity_at=None, last_non_activity_message=None, unread_count=None, additional_attributes=None, custom_attributes=None, meta=None, *args, **kwargs):  # noqa: E501
+    def __init__(self, messages=None, account_id=None, inbox_id=None, status=None, timestamp=None, contact_last_seen_at=None, agent_last_seen_at=None, last_activity_at=None, last_non_activity_message=None, unread_count=None, additional_attributes=None, custom_attributes=None, meta=None, *args, **kwargs):  # noqa: E501
         """AllOfconversationListDataPayloadItems - a model defined in Swagger"""  # noqa: E501
-        self._id = None
         self._messages = None
         self._account_id = None
         self._inbox_id = None
@@ -83,8 +80,6 @@ class AllOfconversationListDataPayloadItems(GenericId):
         self._custom_attributes = None
         self._meta = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
         if messages is not None:
             self.messages = messages
         if account_id is not None:
@@ -112,29 +107,6 @@ class AllOfconversationListDataPayloadItems(GenericId):
         if meta is not None:
             self.meta = meta
         GenericId.__init__(self, *args, **kwargs)
-
-    @property
-    def id(self):
-        """Gets the id of this AllOfconversationListDataPayloadItems.  # noqa: E501
-
-        ID of the conversation  # noqa: E501
-
-        :return: The id of this AllOfconversationListDataPayloadItems.  # noqa: E501
-        :rtype: int
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this AllOfconversationListDataPayloadItems.
-
-        ID of the conversation  # noqa: E501
-
-        :param id: The id of this AllOfconversationListDataPayloadItems.  # noqa: E501
-        :type: int
-        """
-
-        self._id = id
 
     @property
     def messages(self):

@@ -4796,9 +4796,6 @@ components:
     conversation:
       type: object
       properties:
-        id:
-          type: integer
-          description: ID of the conversation
         messages:
           type: array
           items:
@@ -5800,15 +5797,15 @@ components:
       items:
         type: object
         allOf:
-        - $ref: '#/definitions/generic_id'
-        - $ref: '#/definitions/contact'
+        - $ref: '#/components/schemas/generic_id'
+        - $ref: '#/components/schemas/contact'
     contact_conversations:
       type: array
       description: array of conversations
       items:
         type: object
         allOf:
-        - $ref: '#/definitions/conversation'
+        - $ref: '#/components/schemas/conversation'
         - type: object
           properties:
             meta:
@@ -5830,7 +5827,7 @@ components:
                       type: string
                       description: Channel Type
                 assignee:
-                  $ref: '#/definitions/user'
+                  $ref: '#/components/schemas/user'
         - type: object
           properties:
             display_id:
@@ -5881,7 +5878,7 @@ components:
                               type: string
                               description: Channel Type
                         assignee:
-                          $ref: '#/definitions/user'
+                          $ref: '#/components/schemas/user'
     conversation_filter_list:
       type: object
       properties:
@@ -5925,7 +5922,7 @@ components:
                             type: string
                             description: Channel Type
                       assignee:
-                        $ref: '#/definitions/user'
+                        $ref: '#/components/schemas/user'
     conversation_show:
       allOf:
       - $ref: '#/components/schemas/conversation'
