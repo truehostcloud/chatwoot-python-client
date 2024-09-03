@@ -5474,6 +5474,7 @@ components:
           - form
           - article
           - input_csat
+          - text
         content_attributes:
           type: object
           properties: {}
