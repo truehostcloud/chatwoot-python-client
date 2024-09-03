@@ -30,7 +30,7 @@ class ConversationStatusTogglePayload(object):
     swagger_types = {
         'success': 'bool',
         'current_status': 'str',
-        'conversation_id': 'float'
+        'conversation_id': 'int'
     }
 
     attribute_map = {
@@ -106,7 +106,7 @@ class ConversationStatusTogglePayload(object):
 
 
         :return: The conversation_id of this ConversationStatusTogglePayload.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._conversation_id
 
@@ -116,7 +116,7 @@ class ConversationStatusTogglePayload(object):
 
 
         :param conversation_id: The conversation_id of this ConversationStatusTogglePayload.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._conversation_id = conversation_id

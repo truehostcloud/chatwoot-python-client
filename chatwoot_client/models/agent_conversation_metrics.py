@@ -28,7 +28,7 @@ class AgentConversationMetrics(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'float',
+        'id': 'int',
         'name': 'str',
         'email': 'str',
         'thumbnail': 'str',
@@ -73,7 +73,7 @@ class AgentConversationMetrics(object):
 
 
         :return: The id of this AgentConversationMetrics.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._id
 
@@ -83,7 +83,7 @@ class AgentConversationMetrics(object):
 
 
         :param id: The id of this AgentConversationMetrics.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._id = id

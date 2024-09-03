@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **float** | Account ID | [optional] 
+**id** | **int** | Account ID | [optional] 
 **name** | **str** | Name of the account | [optional] 
 **role** | **str** | The user role in the account | [optional] 
 

@@ -37,7 +37,7 @@ class InlineResponse2005(GenericId):
         'private': 'bool',
         'attachment': 'object',
         'sender': 'object',
-        'conversation_id': 'float'
+        'conversation_id': 'int'
     }
     if hasattr(GenericId, "swagger_types"):
         swagger_types.update(GenericId.swagger_types)
@@ -291,7 +291,7 @@ class InlineResponse2005(GenericId):
         ID of the conversation  # noqa: E501
 
         :return: The conversation_id of this InlineResponse2005.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._conversation_id
 
@@ -302,7 +302,7 @@ class InlineResponse2005(GenericId):
         ID of the conversation  # noqa: E501
 
         :param conversation_id: The conversation_id of this InlineResponse2005.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._conversation_id = conversation_id

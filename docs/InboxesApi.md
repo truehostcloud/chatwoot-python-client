@@ -150,7 +150,7 @@ configuration.api_key['api_access_token'] = 'YOUR_API_KEY'
 # create an instance of the API class
 api_instance = chatwoot_client.InboxesApi(chatwoot_client.ApiClient(configuration))
 account_id = 56 # int | The numeric ID of the account
-id = 1.2 # float | ID of the inbox
+id = 56 # int | ID of the inbox
 
 try:
     # Get an inbox
@@ -165,7 +165,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **account_id** | **int**| The numeric ID of the account | 
- **id** | **float**| ID of the inbox | 
+ **id** | **int**| ID of the inbox | 
 
 ### Return type
 
@@ -206,7 +206,7 @@ configuration.api_key['api_access_token'] = 'YOUR_API_KEY'
 # create an instance of the API class
 api_instance = chatwoot_client.InboxesApi(chatwoot_client.ApiClient(configuration))
 account_id = 56 # int | The numeric ID of the account
-id = 1.2 # float | ID of the inbox
+id = 56 # int | ID of the inbox
 
 try:
     # Show Inbox Agent Bot
@@ -221,7 +221,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **account_id** | **int**| The numeric ID of the account | 
- **id** | **float**| ID of the inbox | 
+ **id** | **int**| ID of the inbox | 
 
 ### Return type
 
@@ -429,7 +429,7 @@ configuration.api_key['api_access_token'] = 'YOUR_API_KEY'
 api_instance = chatwoot_client.InboxesApi(chatwoot_client.ApiClient(configuration))
 body = chatwoot_client.IdSetAgentBotBody() # IdSetAgentBotBody | 
 account_id = 56 # int | The numeric ID of the account
-id = 1.2 # float | ID of the inbox
+id = 56 # int | ID of the inbox
 
 try:
     # Add or remove agent bot
@@ -444,7 +444,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**IdSetAgentBotBody**](IdSetAgentBotBody.md)|  | 
  **account_id** | **int**| The numeric ID of the account | 
- **id** | **float**| ID of the inbox | 
+ **id** | **int**| ID of the inbox | 
 
 ### Return type
 
@@ -542,7 +542,7 @@ configuration.api_key['api_access_token'] = 'YOUR_API_KEY'
 api_instance = chatwoot_client.InboxesApi(chatwoot_client.ApiClient(configuration))
 body = chatwoot_client.InboxesIdBody() # InboxesIdBody | 
 account_id = 56 # int | The numeric ID of the account
-id = 1.2 # float | ID of the inbox
+id = 56 # int | ID of the inbox
 
 try:
     # Update Inbox
@@ -558,7 +558,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**InboxesIdBody**](InboxesIdBody.md)|  | 
  **account_id** | **int**| The numeric ID of the account | 
- **id** | **float**| ID of the inbox | 
+ **id** | **int**| ID of the inbox | 
 
 ### Return type
 

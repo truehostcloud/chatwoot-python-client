@@ -29,7 +29,7 @@ class ExtendedContact(Contact):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'float',
+        'id': 'int',
         'availability_status': 'str'
     }
     if hasattr(Contact, "swagger_types"):
@@ -60,7 +60,7 @@ class ExtendedContact(Contact):
         Id of the user  # noqa: E501
 
         :return: The id of this ExtendedContact.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._id
 
@@ -71,7 +71,7 @@ class ExtendedContact(Contact):
         Id of the user  # noqa: E501
 
         :param id: The id of this ExtendedContact.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._id = id

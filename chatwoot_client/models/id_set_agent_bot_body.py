@@ -28,7 +28,7 @@ class IdSetAgentBotBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'agent_bot': 'float'
+        'agent_bot': 'int'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class IdSetAgentBotBody(object):
         Agent bot ID  # noqa: E501
 
         :return: The agent_bot of this IdSetAgentBotBody.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._agent_bot
 
@@ -59,7 +59,7 @@ class IdSetAgentBotBody(object):
         Agent bot ID  # noqa: E501
 
         :param agent_bot: The agent_bot of this IdSetAgentBotBody.  # noqa: E501
-        :type: float
+        :type: int
         """
         if agent_bot is None:
             raise ValueError("Invalid value for `agent_bot`, must not be `None`")  # noqa: E501

@@ -28,8 +28,8 @@ class AgentConversationMetricsMetric(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'open': 'float',
-        'unattended': 'float'
+        'open': 'int',
+        'unattended': 'int'
     }
 
     attribute_map = {
@@ -53,7 +53,7 @@ class AgentConversationMetricsMetric(object):
 
 
         :return: The open of this AgentConversationMetricsMetric.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._open
 
@@ -63,7 +63,7 @@ class AgentConversationMetricsMetric(object):
 
 
         :param open: The open of this AgentConversationMetricsMetric.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._open = open
@@ -74,7 +74,7 @@ class AgentConversationMetricsMetric(object):
 
 
         :return: The unattended of this AgentConversationMetricsMetric.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._unattended
 
@@ -84,7 +84,7 @@ class AgentConversationMetricsMetric(object):
 
 
         :param unattended: The unattended of this AgentConversationMetricsMetric.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._unattended = unattended

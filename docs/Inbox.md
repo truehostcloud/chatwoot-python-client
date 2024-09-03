@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **float** | ID of the inbox | [optional] 
+**id** | **int** | ID of the inbox | [optional] 
 **name** | **str** | The name of the inbox | [optional] 
 **website_url** | **str** | Website URL | [optional] 
 **channel_type** | **str** | The type of the inbox | [optional] 

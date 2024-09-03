@@ -28,7 +28,7 @@ class ContactCreate(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'inbox_id': 'float',
+        'inbox_id': 'int',
         'name': 'str',
         'email': 'str',
         'phone_number': 'str',
@@ -82,7 +82,7 @@ class ContactCreate(object):
 
 
         :return: The inbox_id of this ContactCreate.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._inbox_id
 
@@ -92,7 +92,7 @@ class ContactCreate(object):
 
 
         :param inbox_id: The inbox_id of this ContactCreate.  # noqa: E501
-        :type: float
+        :type: int
         """
         if inbox_id is None:
             raise ValueError("Invalid value for `inbox_id`, must not be `None`")  # noqa: E501

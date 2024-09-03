@@ -28,9 +28,9 @@ class InlineResponse2007(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'open': 'float',
-        'unattended': 'float',
-        'unassigned': 'float'
+        'open': 'int',
+        'unattended': 'int',
+        'unassigned': 'int'
     }
 
     attribute_map = {
@@ -58,7 +58,7 @@ class InlineResponse2007(object):
 
 
         :return: The open of this InlineResponse2007.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._open
 
@@ -68,7 +68,7 @@ class InlineResponse2007(object):
 
 
         :param open: The open of this InlineResponse2007.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._open = open
@@ -79,7 +79,7 @@ class InlineResponse2007(object):
 
 
         :return: The unattended of this InlineResponse2007.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._unattended
 
@@ -89,7 +89,7 @@ class InlineResponse2007(object):
 
 
         :param unattended: The unattended of this InlineResponse2007.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._unattended = unattended
@@ -100,7 +100,7 @@ class InlineResponse2007(object):
 
 
         :return: The unassigned of this InlineResponse2007.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._unassigned
 
@@ -110,7 +110,7 @@ class InlineResponse2007(object):
 
 
         :param unassigned: The unassigned of this InlineResponse2007.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._unassigned = unassigned

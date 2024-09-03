@@ -253,7 +253,7 @@ class InboxesApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the inbox (required)
+        :param int id: ID of the inbox (required)
         :return: Inbox
                  If the method is called asynchronously,
                  returns the request thread.
@@ -276,7 +276,7 @@ class InboxesApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the inbox (required)
+        :param int id: ID of the inbox (required)
         :return: Inbox
                  If the method is called asynchronously,
                  returns the request thread.
@@ -356,7 +356,7 @@ class InboxesApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the inbox (required)
+        :param int id: ID of the inbox (required)
         :return: AgentBot
                  If the method is called asynchronously,
                  returns the request thread.
@@ -379,7 +379,7 @@ class InboxesApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the inbox (required)
+        :param int id: ID of the inbox (required)
         :return: AgentBot
                  If the method is called asynchronously,
                  returns the request thread.
@@ -765,7 +765,7 @@ class InboxesApi(object):
         :param async_req bool
         :param IdSetAgentBotBody body: (required)
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the inbox (required)
+        :param int id: ID of the inbox (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -789,7 +789,7 @@ class InboxesApi(object):
         :param async_req bool
         :param IdSetAgentBotBody body: (required)
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the inbox (required)
+        :param int id: ID of the inbox (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -983,7 +983,7 @@ class InboxesApi(object):
         :param async_req bool
         :param InboxesIdBody body: (required)
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the inbox (required)
+        :param int id: ID of the inbox (required)
         :return: Inbox
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1007,7 +1007,7 @@ class InboxesApi(object):
         :param async_req bool
         :param InboxesIdBody body: (required)
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the inbox (required)
+        :param int id: ID of the inbox (required)
         :return: Inbox
                  If the method is called asynchronously,
                  returns the request thread.

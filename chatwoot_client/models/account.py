@@ -28,7 +28,7 @@ class Account(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'float',
+        'id': 'int',
         'name': 'str',
         'role': 'str'
     }
@@ -59,7 +59,7 @@ class Account(object):
         Account ID  # noqa: E501
 
         :return: The id of this Account.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._id
 
@@ -70,7 +70,7 @@ class Account(object):
         Account ID  # noqa: E501
 
         :param id: The id of this Account.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._id = id

@@ -30,10 +30,10 @@ class AccountSummaryPrevious(object):
     swagger_types = {
         'avg_first_response_time': 'str',
         'avg_resolution_time': 'str',
-        'conversations_count': 'float',
-        'incoming_messages_count': 'float',
-        'outgoing_messages_count': 'float',
-        'resolutions_count': 'float'
+        'conversations_count': 'int',
+        'incoming_messages_count': 'int',
+        'outgoing_messages_count': 'int',
+        'resolutions_count': 'int'
     }
 
     attribute_map = {
@@ -115,7 +115,7 @@ class AccountSummaryPrevious(object):
 
 
         :return: The conversations_count of this AccountSummaryPrevious.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._conversations_count
 
@@ -125,7 +125,7 @@ class AccountSummaryPrevious(object):
 
 
         :param conversations_count: The conversations_count of this AccountSummaryPrevious.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._conversations_count = conversations_count
@@ -136,7 +136,7 @@ class AccountSummaryPrevious(object):
 
 
         :return: The incoming_messages_count of this AccountSummaryPrevious.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._incoming_messages_count
 
@@ -146,7 +146,7 @@ class AccountSummaryPrevious(object):
 
 
         :param incoming_messages_count: The incoming_messages_count of this AccountSummaryPrevious.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._incoming_messages_count = incoming_messages_count
@@ -157,7 +157,7 @@ class AccountSummaryPrevious(object):
 
 
         :return: The outgoing_messages_count of this AccountSummaryPrevious.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._outgoing_messages_count
 
@@ -167,7 +167,7 @@ class AccountSummaryPrevious(object):
 
 
         :param outgoing_messages_count: The outgoing_messages_count of this AccountSummaryPrevious.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._outgoing_messages_count = outgoing_messages_count
@@ -178,7 +178,7 @@ class AccountSummaryPrevious(object):
 
 
         :return: The resolutions_count of this AccountSummaryPrevious.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._resolutions_count
 
@@ -188,7 +188,7 @@ class AccountSummaryPrevious(object):
 
 
         :param resolutions_count: The resolutions_count of this AccountSummaryPrevious.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._resolutions_count = resolutions_count

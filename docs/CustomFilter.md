@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **float** | The ID of the custom filter | [optional] 
+**id** | **int** | The ID of the custom filter | [optional] 
 **name** | **str** | The name of the custom filter | [optional] 
 **type** | **str** | The description about the custom filter | [optional] 
 **query** | **object** | A query that needs to be saved as a custom filter | [optional] 

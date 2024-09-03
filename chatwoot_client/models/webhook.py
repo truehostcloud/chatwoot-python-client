@@ -28,10 +28,10 @@ class Webhook(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'float',
+        'id': 'int',
         'url': 'str',
         'subscriptions': 'list[str]',
-        'account_id': 'float'
+        'account_id': 'int'
     }
 
     attribute_map = {
@@ -64,7 +64,7 @@ class Webhook(object):
         The ID of the webhook  # noqa: E501
 
         :return: The id of this Webhook.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._id
 
@@ -75,7 +75,7 @@ class Webhook(object):
         The ID of the webhook  # noqa: E501
 
         :param id: The id of this Webhook.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._id = id
@@ -140,7 +140,7 @@ class Webhook(object):
         The id of the account which the webhook object belongs to  # noqa: E501
 
         :return: The account_id of this Webhook.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._account_id
 
@@ -151,7 +151,7 @@ class Webhook(object):
         The id of the account which the webhook object belongs to  # noqa: E501
 
         :param account_id: The account_id of this Webhook.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._account_id = account_id

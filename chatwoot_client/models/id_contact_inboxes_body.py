@@ -28,7 +28,7 @@ class IdContactInboxesBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'inbox_id': 'float',
+        'inbox_id': 'int',
         'source_id': 'str'
     }
 
@@ -53,7 +53,7 @@ class IdContactInboxesBody(object):
         The ID of the inbox  # noqa: E501
 
         :return: The inbox_id of this IdContactInboxesBody.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._inbox_id
 
@@ -64,7 +64,7 @@ class IdContactInboxesBody(object):
         The ID of the inbox  # noqa: E501
 
         :param inbox_id: The inbox_id of this IdContactInboxesBody.  # noqa: E501
-        :type: float
+        :type: int
         """
         if inbox_id is None:
             raise ValueError("Invalid value for `inbox_id`, must not be `None`")  # noqa: E501

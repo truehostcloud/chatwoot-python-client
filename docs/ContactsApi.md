@@ -37,7 +37,7 @@ configuration.api_key['api_access_token'] = 'YOUR_API_KEY'
 # create an instance of the API class
 api_instance = chatwoot_client.ContactsApi(chatwoot_client.ApiClient(configuration))
 account_id = 56 # int | The numeric ID of the account
-id = 1.2 # float | ID of the contact
+id = 56 # int | ID of the contact
 
 try:
     # Contact Conversations
@@ -52,7 +52,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **account_id** | **int**| The numeric ID of the account | 
- **id** | **float**| ID of the contact | 
+ **id** | **int**| ID of the contact | 
 
 ### Return type
 
@@ -147,7 +147,7 @@ configuration.api_key['api_access_token'] = 'YOUR_API_KEY'
 # create an instance of the API class
 api_instance = chatwoot_client.ContactsApi(chatwoot_client.ApiClient(configuration))
 account_id = 56 # int | The numeric ID of the account
-id = 1.2 # float | ID of the contact
+id = 56 # int | ID of the contact
 
 try:
     # Delete Contact
@@ -161,7 +161,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **account_id** | **int**| The numeric ID of the account | 
- **id** | **float**| ID of the contact | 
+ **id** | **int**| ID of the contact | 
 
 ### Return type
 
@@ -202,7 +202,7 @@ configuration.api_key['api_access_token'] = 'YOUR_API_KEY'
 # create an instance of the API class
 api_instance = chatwoot_client.ContactsApi(chatwoot_client.ApiClient(configuration))
 account_id = 56 # int | The numeric ID of the account
-id = 1.2 # float | ID of the contact
+id = 56 # int | ID of the contact
 
 try:
     # Show Contact
@@ -217,7 +217,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **account_id** | **int**| The numeric ID of the account | 
- **id** | **float**| ID of the contact | 
+ **id** | **int**| ID of the contact | 
 
 ### Return type
 
@@ -440,7 +440,7 @@ configuration.api_key['api_access_token'] = 'YOUR_API_KEY'
 api_instance = chatwoot_client.ContactsApi(chatwoot_client.ApiClient(configuration))
 body = chatwoot_client.ContactUpdate() # ContactUpdate | 
 account_id = 56 # int | The numeric ID of the account
-id = 1.2 # float | ID of the contact
+id = 56 # int | ID of the contact
 
 try:
     # Update Contact
@@ -456,7 +456,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**ContactUpdate**](ContactUpdate.md)|  | 
  **account_id** | **int**| The numeric ID of the account | 
- **id** | **float**| ID of the contact | 
+ **id** | **int**| ID of the contact | 
 
 ### Return type
 

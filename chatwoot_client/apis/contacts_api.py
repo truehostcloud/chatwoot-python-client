@@ -43,7 +43,7 @@ class ContactsApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the contact (required)
+        :param int id: ID of the contact (required)
         :return: ContactConversations
                  If the method is called asynchronously,
                  returns the request thread.
@@ -66,7 +66,7 @@ class ContactsApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the contact (required)
+        :param int id: ID of the contact (required)
         :return: ContactConversations
                  If the method is called asynchronously,
                  returns the request thread.
@@ -252,7 +252,7 @@ class ContactsApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the contact (required)
+        :param int id: ID of the contact (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -274,7 +274,7 @@ class ContactsApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the contact (required)
+        :param int id: ID of the contact (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -350,7 +350,7 @@ class ContactsApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the contact (required)
+        :param int id: ID of the contact (required)
         :return: ExtendedContact
                  If the method is called asynchronously,
                  returns the request thread.
@@ -373,7 +373,7 @@ class ContactsApi(object):
 
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the contact (required)
+        :param int id: ID of the contact (required)
         :return: ExtendedContact
                  If the method is called asynchronously,
                  returns the request thread.
@@ -775,7 +775,7 @@ class ContactsApi(object):
         :param async_req bool
         :param ContactUpdate body: (required)
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the contact (required)
+        :param int id: ID of the contact (required)
         :return: ContactBase
                  If the method is called asynchronously,
                  returns the request thread.
@@ -799,7 +799,7 @@ class ContactsApi(object):
         :param async_req bool
         :param ContactUpdate body: (required)
         :param int account_id: The numeric ID of the account (required)
-        :param float id: ID of the contact (required)
+        :param int id: ID of the contact (required)
         :return: ContactBase
                  If the method is called asynchronously,
                  returns the request thread.

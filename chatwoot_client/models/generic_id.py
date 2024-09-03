@@ -28,7 +28,7 @@ class GenericId(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'float'
+        'id': 'int'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class GenericId(object):
 
 
         :return: The id of this GenericId.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._id
 
@@ -58,7 +58,7 @@ class GenericId(object):
 
 
         :param id: The id of this GenericId.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._id = id

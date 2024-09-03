@@ -28,9 +28,9 @@ class InlineResponse2004(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'float',
-        'account_id': 'float',
-        'inbox_id': 'float'
+        'id': 'int',
+        'account_id': 'int',
+        'inbox_id': 'int'
     }
 
     attribute_map = {
@@ -59,7 +59,7 @@ class InlineResponse2004(object):
         ID of the conversation  # noqa: E501
 
         :return: The id of this InlineResponse2004.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._id
 
@@ -70,7 +70,7 @@ class InlineResponse2004(object):
         ID of the conversation  # noqa: E501
 
         :param id: The id of this InlineResponse2004.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._id = id
@@ -82,7 +82,7 @@ class InlineResponse2004(object):
         Account Id  # noqa: E501
 
         :return: The account_id of this InlineResponse2004.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._account_id
 
@@ -93,7 +93,7 @@ class InlineResponse2004(object):
         Account Id  # noqa: E501
 
         :param account_id: The account_id of this InlineResponse2004.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._account_id = account_id
@@ -105,7 +105,7 @@ class InlineResponse2004(object):
         ID of the inbox  # noqa: E501
 
         :return: The inbox_id of this InlineResponse2004.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._inbox_id
 
@@ -116,7 +116,7 @@ class InlineResponse2004(object):
         ID of the inbox  # noqa: E501
 
         :param inbox_id: The inbox_id of this InlineResponse2004.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._inbox_id = inbox_id

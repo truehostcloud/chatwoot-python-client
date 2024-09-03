@@ -28,10 +28,10 @@ class ConversationListDataMeta(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'mine_count': 'float',
-        'unassigned_count': 'float',
-        'assigned_count': 'float',
-        'all_count': 'float'
+        'mine_count': 'int',
+        'unassigned_count': 'int',
+        'assigned_count': 'int',
+        'all_count': 'int'
     }
 
     attribute_map = {
@@ -63,7 +63,7 @@ class ConversationListDataMeta(object):
 
 
         :return: The mine_count of this ConversationListDataMeta.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._mine_count
 
@@ -73,7 +73,7 @@ class ConversationListDataMeta(object):
 
 
         :param mine_count: The mine_count of this ConversationListDataMeta.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._mine_count = mine_count
@@ -84,7 +84,7 @@ class ConversationListDataMeta(object):
 
 
         :return: The unassigned_count of this ConversationListDataMeta.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._unassigned_count
 
@@ -94,7 +94,7 @@ class ConversationListDataMeta(object):
 
 
         :param unassigned_count: The unassigned_count of this ConversationListDataMeta.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._unassigned_count = unassigned_count
@@ -105,7 +105,7 @@ class ConversationListDataMeta(object):
 
 
         :return: The assigned_count of this ConversationListDataMeta.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._assigned_count
 
@@ -115,7 +115,7 @@ class ConversationListDataMeta(object):
 
 
         :param assigned_count: The assigned_count of this ConversationListDataMeta.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._assigned_count = assigned_count
@@ -126,7 +126,7 @@ class ConversationListDataMeta(object):
 
 
         :return: The all_count of this ConversationListDataMeta.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._all_count
 
@@ -136,7 +136,7 @@ class ConversationListDataMeta(object):
 
 
         :param all_count: The all_count of this ConversationListDataMeta.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._all_count = all_count

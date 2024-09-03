@@ -29,7 +29,7 @@ class InlineResponse2006(object):
     """
     swagger_types = {
         'value': 'str',
-        'timestamp': 'float'
+        'timestamp': 'int'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class InlineResponse2006(object):
 
 
         :return: The timestamp of this InlineResponse2006.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._timestamp
 
@@ -84,7 +84,7 @@ class InlineResponse2006(object):
 
 
         :param timestamp: The timestamp of this InlineResponse2006.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._timestamp = timestamp

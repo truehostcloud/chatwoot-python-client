@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **private** | **bool** | The flags which shows whether the message is private or not | [optional] 
 **attachment** | **object** | The file object attached to the image | [optional] 
 **sender** | **object** | User/Agent/AgentBot object | [optional] 
-**conversation_id** | **float** | ID of the conversation | [optional] 
+**conversation_id** | **int** | ID of the conversation | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

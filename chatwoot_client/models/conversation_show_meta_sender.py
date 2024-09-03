@@ -28,7 +28,7 @@ class ConversationShowMetaSender(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'float',
+        'id': 'int',
         'name': 'str',
         'thumbnail': 'str',
         'channel': 'str'
@@ -64,7 +64,7 @@ class ConversationShowMetaSender(object):
         ID fo the sender  # noqa: E501
 
         :return: The id of this ConversationShowMetaSender.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._id
 
@@ -75,7 +75,7 @@ class ConversationShowMetaSender(object):
         ID fo the sender  # noqa: E501
 
         :param id: The id of this ConversationShowMetaSender.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._id = id

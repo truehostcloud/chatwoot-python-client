@@ -1633,7 +1633,7 @@ paths:
         description: ID of the contact
         required: true
         schema:
-          type: number
+          type: integer
       responses:
         "200":
           description: Success
@@ -1665,7 +1665,7 @@ paths:
         description: ID of the contact
         required: true
         schema:
-          type: number
+          type: integer
       requestBody:
         content:
           application/json; charset=utf-8:
@@ -1703,7 +1703,7 @@ paths:
         description: ID of the contact
         required: true
         schema:
-          type: number
+          type: integer
       responses:
         "200":
           description: Success
@@ -1733,7 +1733,7 @@ paths:
         description: ID of the contact
         required: true
         schema:
-          type: number
+          type: integer
       responses:
         "200":
           description: Success
@@ -1909,7 +1909,7 @@ paths:
         description: ID of the contact
         required: true
         schema:
-          type: number
+          type: integer
       requestBody:
         content:
           application/json; charset=utf-8:
@@ -1919,7 +1919,7 @@ paths:
               type: object
               properties:
                 inbox_id:
-                  type: number
+                  type: integer
                   description: The ID of the inbox
                 source_id:
                   type: string
@@ -1961,7 +1961,7 @@ paths:
         description: ID of the contact
         required: true
         schema:
-          type: number
+          type: integer
       responses:
         "200":
           description: Success
@@ -2379,13 +2379,13 @@ paths:
                     type: object
                     properties:
                       mine_count:
-                        type: number
+                        type: integer
                       unassigned_count:
-                        type: number
+                        type: integer
                       assigned_count:
-                        type: number
+                        type: integer
                       all_count:
-                        type: number
+                        type: integer
         "400":
           description: Bad Request Error
           content:
@@ -2570,13 +2570,13 @@ paths:
                 type: object
                 properties:
                   id:
-                    type: number
+                    type: integer
                     description: ID of the conversation
                   account_id:
-                    type: number
+                    type: integer
                     description: Account Id
                   inbox_id:
-                    type: number
+                    type: integer
                     description: ID of the inbox
         "403":
           description: Access denied
@@ -2837,10 +2837,10 @@ paths:
               type: object
               properties:
                 assignee_id:
-                  type: number
+                  type: integer
                   description: Id of the assignee user
                 team_id:
-                  type: number
+                  type: integer
                   description: "Id of the team. If the assignee_id is present, this\
                     \ param would be ignored"
         required: true
@@ -2986,7 +2986,7 @@ paths:
         description: ID of the inbox
         required: true
         schema:
-          type: number
+          type: integer
       responses:
         "200":
           description: Success
@@ -3084,7 +3084,7 @@ paths:
         description: ID of the inbox
         required: true
         schema:
-          type: number
+          type: integer
       requestBody:
         content:
           application/json; charset=utf-8:
@@ -3156,7 +3156,7 @@ paths:
         description: ID of the inbox
         required: true
         schema:
-          type: number
+          type: integer
       responses:
         "204":
           description: Success
@@ -3190,7 +3190,7 @@ paths:
         description: ID of the inbox
         required: true
         schema:
-          type: number
+          type: integer
       requestBody:
         content:
           application/json; charset=utf-8:
@@ -3200,7 +3200,7 @@ paths:
               type: object
               properties:
                 agent_bot:
-                  type: number
+                  type: integer
                   description: Agent bot ID
         required: true
       responses:
@@ -4385,7 +4385,7 @@ paths:
                     value:
                       type: string
                     timestamp:
-                      type: number
+                      type: integer
         "403":
           description: Access denied
           content: {}
@@ -4477,11 +4477,11 @@ paths:
                 type: object
                 properties:
                   open:
-                    type: number
+                    type: integer
                   unattended:
-                    type: number
+                    type: integer
                   unassigned:
-                    type: number
+                    type: integer
                 description: Object of account conversation metrics
         "403":
           description: Access denied
@@ -4557,7 +4557,7 @@ components:
       type: object
       properties:
         id:
-          type: number
+          type: integer
     canned_response:
       type: object
       properties:
@@ -4797,17 +4797,17 @@ components:
       type: object
       properties:
         id:
-          type: number
+          type: integer
           description: ID of the conversation
         messages:
           type: array
           items:
             $ref: '#/components/schemas/message'
         account_id:
-          type: number
+          type: integer
           description: Account Id
         inbox_id:
-          type: number
+          type: integer
           description: ID of the inbox
         status:
           type: string
@@ -4824,12 +4824,12 @@ components:
         agent_last_seen_at:
           type: string
         last_activity_at:
-          type: number
+          type: integer
           description: The time at which the last activity happened in the conversation
         last_non_activity_message:
           $ref: '#/components/schemas/message'
         unread_count:
-          type: number
+          type: integer
           description: The number of unread messages
         additional_attributes:
           type: object
@@ -4890,13 +4890,13 @@ components:
           properties: {}
           description: User/Agent/AgentBot object
         conversation_id:
-          type: number
+          type: integer
           description: ID of the conversation
     user:
       type: object
       properties:
         id:
-          type: number
+          type: integer
         uid:
           type: string
         name:
@@ -4908,7 +4908,7 @@ components:
         email:
           type: string
         account_id:
-          type: number
+          type: integer
         role:
           type: string
           enum:
@@ -4969,7 +4969,7 @@ components:
       type: object
       properties:
         id:
-          type: number
+          type: integer
           description: ID of the inbox
         name:
           type: string
@@ -5012,7 +5012,7 @@ components:
       type: object
       properties:
         id:
-          type: number
+          type: integer
           description: ID of the agent bot
         name:
           type: string
@@ -5021,7 +5021,7 @@ components:
           type: string
           description: The description about the agent bot
         account_id:
-          type: number
+          type: integer
           description: Account ID if it's an account specific bot
         outgoing_url:
           type: string
@@ -5046,7 +5046,7 @@ components:
       type: object
       properties:
         id:
-          type: number
+          type: integer
           description: The ID of the custom filter
         name:
           type: string
@@ -5074,7 +5074,7 @@ components:
       type: object
       properties:
         id:
-          type: number
+          type: integer
           description: The ID of the webhook
         url:
           type: string
@@ -5094,13 +5094,13 @@ components:
             - message_updated
             - webwidget_triggered
         account_id:
-          type: number
+          type: integer
           description: The id of the account which the webhook object belongs to
     account:
       type: object
       properties:
         id:
-          type: number
+          type: integer
           description: Account ID
         name:
           type: string
@@ -5115,7 +5115,7 @@ components:
       type: object
       properties:
         id:
-          type: number
+          type: integer
           description: Account ID
         name:
           type: string
@@ -5124,7 +5124,7 @@ components:
       type: object
       properties:
         id:
-          type: number
+          type: integer
           description: The ID of the team
         name:
           type: string
@@ -5138,7 +5138,7 @@ components:
             \ assign the conversation to an agent in the team while assigning the\
             \ conversation to a team"
         account_id:
-          type: number
+          type: integer
           description: The ID of the account with the team is a part of
         is_member:
           type: boolean
@@ -5395,7 +5395,7 @@ components:
       type: object
       properties:
         inbox_id:
-          type: number
+          type: integer
         name:
           type: string
           description: name of the contact
@@ -5782,7 +5782,7 @@ components:
       - type: object
         properties:
           id:
-            type: number
+            type: integer
             description: Id of the user
           availability_status:
             type: string
@@ -5818,7 +5818,7 @@ components:
                   type: object
                   properties:
                     id:
-                      type: number
+                      type: integer
                       description: ID fo the sender
                     name:
                       type: string
@@ -5834,7 +5834,7 @@ components:
         - type: object
           properties:
             display_id:
-              type: number
+              type: integer
     conversation_list:
       type: object
       properties:
@@ -5845,13 +5845,13 @@ components:
               type: object
               properties:
                 mine_count:
-                  type: number
+                  type: integer
                 unassigned_count:
-                  type: number
+                  type: integer
                 assigned_count:
-                  type: number
+                  type: integer
                 all_count:
-                  type: number
+                  type: integer
             payload:
               type: array
               description: array of conversations
@@ -5869,7 +5869,7 @@ components:
                           type: object
                           properties:
                             id:
-                              type: number
+                              type: integer
                               description: ID fo the sender
                             name:
                               type: string
@@ -5889,13 +5889,13 @@ components:
           type: object
           properties:
             mine_count:
-              type: number
+              type: integer
             unassigned_count:
-              type: number
+              type: integer
             assigned_count:
-              type: number
+              type: integer
             all_count:
-              type: number
+              type: integer
         payload:
           type: array
           description: array of conversations
@@ -5913,7 +5913,7 @@ components:
                         type: object
                         properties:
                           id:
-                            type: number
+                            type: integer
                             description: ID fo the sender
                           name:
                             type: string
@@ -5938,7 +5938,7 @@ components:
                 type: object
                 properties:
                   id:
-                    type: number
+                    type: integer
                     description: ID fo the sender
                   name:
                     type: string
@@ -5968,7 +5968,7 @@ components:
               - open
               - resolved
             conversation_id:
-              type: number
+              type: integer
     conversation_labels:
       type: object
       properties:
@@ -5985,13 +5985,13 @@ components:
         avg_resolution_time:
           type: string
         conversations_count:
-          type: number
+          type: integer
         incoming_messages_count:
-          type: number
+          type: integer
         outgoing_messages_count:
-          type: number
+          type: integer
         resolutions_count:
-          type: number
+          type: integer
         previous:
           type: object
           properties:
@@ -6000,18 +6000,18 @@ components:
             avg_resolution_time:
               type: string
             conversations_count:
-              type: number
+              type: integer
             incoming_messages_count:
-              type: number
+              type: integer
             outgoing_messages_count:
-              type: number
+              type: integer
             resolutions_count:
-              type: number
+              type: integer
     agent_conversation_metrics:
       type: object
       properties:
         id:
-          type: number
+          type: integer
         name:
           type: string
         email:
@@ -6024,9 +6024,9 @@ components:
           type: object
           properties:
             open:
-              type: number
+              type: integer
             unattended:
-              type: number
+              type: integer
   parameters:
     account_id:
       name: account_id

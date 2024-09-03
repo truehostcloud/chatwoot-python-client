@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inbox_id** | **float** |  | 
+**inbox_id** | **int** |  | 
 **name** | **str** | name of the contact | [optional] 
 **email** | **str** | email of the contact | [optional] 
 **phone_number** | **str** | phone number of the contact | [optional] 

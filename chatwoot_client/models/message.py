@@ -36,7 +36,7 @@ class Message(object):
         'private': 'bool',
         'attachment': 'object',
         'sender': 'object',
-        'conversation_id': 'float'
+        'conversation_id': 'int'
     }
 
     attribute_map = {
@@ -285,7 +285,7 @@ class Message(object):
         ID of the conversation  # noqa: E501
 
         :return: The conversation_id of this Message.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._conversation_id
 
@@ -296,7 +296,7 @@ class Message(object):
         ID of the conversation  # noqa: E501
 
         :param conversation_id: The conversation_id of this Message.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._conversation_id = conversation_id

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **float** | ID fo the sender | [optional] 
+**id** | **int** | ID fo the sender | [optional] 
 **name** | **str** | The name of the sender | [optional] 
 **thumbnail** | **str** | Avatar URL of the contact | [optional] 
 **channel** | **str** | Channel Type | [optional] 

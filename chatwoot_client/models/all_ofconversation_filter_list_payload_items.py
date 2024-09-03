@@ -29,17 +29,17 @@ class AllOfconversationFilterListPayloadItems(GenericId):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'float',
+        'id': 'int',
         'messages': 'list[Message]',
-        'account_id': 'float',
-        'inbox_id': 'float',
+        'account_id': 'int',
+        'inbox_id': 'int',
         'status': 'str',
         'timestamp': 'str',
         'contact_last_seen_at': 'str',
         'agent_last_seen_at': 'str',
-        'last_activity_at': 'float',
+        'last_activity_at': 'int',
         'last_non_activity_message': 'Message',
-        'unread_count': 'float',
+        'unread_count': 'int',
         'additional_attributes': 'object',
         'custom_attributes': 'object',
         'meta': 'object'
@@ -120,7 +120,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         ID of the conversation  # noqa: E501
 
         :return: The id of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._id
 
@@ -131,7 +131,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         ID of the conversation  # noqa: E501
 
         :param id: The id of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._id = id
@@ -164,7 +164,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         Account Id  # noqa: E501
 
         :return: The account_id of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._account_id
 
@@ -175,7 +175,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         Account Id  # noqa: E501
 
         :param account_id: The account_id of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._account_id = account_id
@@ -187,7 +187,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         ID of the inbox  # noqa: E501
 
         :return: The inbox_id of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._inbox_id
 
@@ -198,7 +198,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         ID of the inbox  # noqa: E501
 
         :param inbox_id: The inbox_id of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._inbox_id = inbox_id
@@ -304,7 +304,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         The time at which the last activity happened in the conversation  # noqa: E501
 
         :return: The last_activity_at of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._last_activity_at
 
@@ -315,7 +315,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         The time at which the last activity happened in the conversation  # noqa: E501
 
         :param last_activity_at: The last_activity_at of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._last_activity_at = last_activity_at
@@ -348,7 +348,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         The number of unread messages  # noqa: E501
 
         :return: The unread_count of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :rtype: float
+        :rtype: int
         """
         return self._unread_count
 
@@ -359,7 +359,7 @@ class AllOfconversationFilterListPayloadItems(GenericId):
         The number of unread messages  # noqa: E501
 
         :param unread_count: The unread_count of this AllOfconversationFilterListPayloadItems.  # noqa: E501
-        :type: float
+        :type: int
         """
 
         self._unread_count = unread_count
