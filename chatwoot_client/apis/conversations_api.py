@@ -45,7 +45,7 @@ class ConversationsApi(object):
         :param ConversationsFilterBody body: (required)
         :param int account_id: The numeric ID of the account (required)
         :param int page:
-        :return: ConversationList
+        :return: ConversationFilterList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -69,7 +69,7 @@ class ConversationsApi(object):
         :param ConversationsFilterBody body: (required)
         :param int account_id: The numeric ID of the account (required)
         :param int page:
-        :return: ConversationList
+        :return: ConversationFilterList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -135,7 +135,7 @@ class ConversationsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ConversationList',  # noqa: E501
+            response_type='ConversationFilterList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

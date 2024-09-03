@@ -2628,6 +2628,7 @@ paths:
                       attribute_key:
                         type: string
                         description: filter attribute name
+
                       filter_operator:
                         type: string
                         description: filter operator name
@@ -2659,7 +2660,7 @@ paths:
           content:
             application/json; charset=utf-8:
               schema:
-                $ref: '#/components/schemas/conversation_list'
+                $ref: '#/components/schemas/conversation_filter_list'
         "400":
           description: Bad Request Error
           content:
@@ -5871,6 +5872,50 @@ components:
                               description: Channel Type
                         assignee:
                           $ref: '#/definitions/user'
+    conversation_filter_list:
+      type: object
+      properties:
+        meta:
+          type: object
+          properties:
+            mine_count:
+              type: number
+            unassigned_count:
+              type: number
+            assigned_count:
+              type: number
+            all_count:
+              type: number
+        payload:
+          type: array
+          description: array of conversations
+          items:
+            type: object
+            allOf:
+              - $ref: '#/components/schemas/generic_id'
+              - $ref: '#/components/schemas/conversation'
+              - type: object
+                properties:
+                  meta:
+                    type: object
+                    properties:
+                      sender:
+                        type: object
+                        properties:
+                          id:
+                            type: number
+                            description: ID fo the sender
+                          name:
+                            type: string
+                            description: The name of the sender
+                          thumbnail:
+                            type: string
+                            description: Avatar URL of the contact
+                          channel:
+                            type: string
+                            description: Channel Type
+                      assignee:
+                        $ref: '#/definitions/user'
     conversation_show:
       allOf:
       - $ref: '#/components/schemas/conversation'

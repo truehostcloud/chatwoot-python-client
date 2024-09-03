@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**toggle_status_of_a_conversation**](ConversationsApi.md#toggle_status_of_a_conversation) | **POST** /api/v1/accounts/{account_id}/conversations/{conversation_id}/toggle_status | Toggle Status
 
 # **conversation_filter**
-> ConversationList conversation_filter(body, account_id, page=page)
+> ConversationFilterList conversation_filter(body, account_id, page=page)
 
 Conversations Filter
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ConversationList**](ConversationList.md)
+[**ConversationFilterList**](ConversationFilterList.md)
 
 ### Authorization
 
