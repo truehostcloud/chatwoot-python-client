@@ -36,6 +36,8 @@ class Conversation(object):
         'timestamp': 'str',
         'contact_last_seen_at': 'str',
         'agent_last_seen_at': 'str',
+        'last_activity_at': 'float',
+        'last_non_activity_message': 'Message',
         'unread_count': 'float',
         'additional_attributes': 'object',
         'custom_attributes': 'object'
@@ -50,12 +52,14 @@ class Conversation(object):
         'timestamp': 'timestamp',
         'contact_last_seen_at': 'contact_last_seen_at',
         'agent_last_seen_at': 'agent_last_seen_at',
+        'last_activity_at': 'last_activity_at',
+        'last_non_activity_message': 'last_non_activity_message',
         'unread_count': 'unread_count',
         'additional_attributes': 'additional_attributes',
         'custom_attributes': 'custom_attributes'
     }
 
-    def __init__(self, id=None, messages=None, account_id=None, inbox_id=None, status=None, timestamp=None, contact_last_seen_at=None, agent_last_seen_at=None, unread_count=None, additional_attributes=None, custom_attributes=None):  # noqa: E501
+    def __init__(self, id=None, messages=None, account_id=None, inbox_id=None, status=None, timestamp=None, contact_last_seen_at=None, agent_last_seen_at=None, last_activity_at=None, last_non_activity_message=None, unread_count=None, additional_attributes=None, custom_attributes=None):  # noqa: E501
         """Conversation - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._messages = None
@@ -65,6 +69,8 @@ class Conversation(object):
         self._timestamp = None
         self._contact_last_seen_at = None
         self._agent_last_seen_at = None
+        self._last_activity_at = None
+        self._last_non_activity_message = None
         self._unread_count = None
         self._additional_attributes = None
         self._custom_attributes = None
@@ -85,6 +91,10 @@ class Conversation(object):
             self.contact_last_seen_at = contact_last_seen_at
         if agent_last_seen_at is not None:
             self.agent_last_seen_at = agent_last_seen_at
+        if last_activity_at is not None:
+            self.last_activity_at = last_activity_at
+        if last_non_activity_message is not None:
+            self.last_non_activity_message = last_non_activity_message
         if unread_count is not None:
             self.unread_count = unread_count
         if additional_attributes is not None:
@@ -275,6 +285,50 @@ class Conversation(object):
         """
 
         self._agent_last_seen_at = agent_last_seen_at
+
+    @property
+    def last_activity_at(self):
+        """Gets the last_activity_at of this Conversation.  # noqa: E501
+
+        The time at which the last activity happened in the conversation  # noqa: E501
+
+        :return: The last_activity_at of this Conversation.  # noqa: E501
+        :rtype: float
+        """
+        return self._last_activity_at
+
+    @last_activity_at.setter
+    def last_activity_at(self, last_activity_at):
+        """Sets the last_activity_at of this Conversation.
+
+        The time at which the last activity happened in the conversation  # noqa: E501
+
+        :param last_activity_at: The last_activity_at of this Conversation.  # noqa: E501
+        :type: float
+        """
+
+        self._last_activity_at = last_activity_at
+
+    @property
+    def last_non_activity_message(self):
+        """Gets the last_non_activity_message of this Conversation.  # noqa: E501
+
+
+        :return: The last_non_activity_message of this Conversation.  # noqa: E501
+        :rtype: Message
+        """
+        return self._last_non_activity_message
+
+    @last_non_activity_message.setter
+    def last_non_activity_message(self, last_non_activity_message):
+        """Sets the last_non_activity_message of this Conversation.
+
+
+        :param last_non_activity_message: The last_non_activity_message of this Conversation.  # noqa: E501
+        :type: Message
+        """
+
+        self._last_non_activity_message = last_non_activity_message
 
     @property
     def unread_count(self):

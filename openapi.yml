@@ -4823,6 +4823,11 @@ components:
           type: string
         agent_last_seen_at:
           type: string
+        last_activity_at:
+          type: number
+          description: The time at which the last activity happened in the conversation
+        last_non_activity_message:
+          $ref: '#/components/schemas/message'
         unread_count:
           type: number
           description: The number of unread messages
