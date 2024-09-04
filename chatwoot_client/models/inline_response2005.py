@@ -131,7 +131,7 @@ class InlineResponse2005(GenericId):
         :param content_type: The content_type of this InlineResponse2005.  # noqa: E501
         :type: str
         """
-        allowed_values = ["text", "input_select", "cards", "form", "input_csat"]  # noqa: E501
+        allowed_values = ["text", "input_select", "cards", "form", "input_csat", "incoming_email"]  # noqa: E501
         if content_type not in allowed_values:
             raise ValueError(
                 "Invalid value for `content_type` ({0}), must be one of {1}"  # noqa: E501

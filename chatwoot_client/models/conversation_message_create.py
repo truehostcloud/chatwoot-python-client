@@ -161,7 +161,7 @@ class ConversationMessageCreate(object):
         :param content_type: The content_type of this ConversationMessageCreate.  # noqa: E501
         :type: str
         """
-        allowed_values = ["input_email", "cards", "input_select", "form", "article", "input_csat", "text"]  # noqa: E501
+        allowed_values = ["input_email", "cards", "input_select", "form", "article", "input_csat", "text", "incoming_email"]  # noqa: E501
         if content_type not in allowed_values:
             raise ValueError(
                 "Invalid value for `content_type` ({0}), must be one of {1}"  # noqa: E501

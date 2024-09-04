@@ -4856,6 +4856,7 @@ components:
           - cards
           - form
           - input_csat
+          - incoming_email
         content_attributes:
           type: object
           properties: {}
@@ -5475,6 +5476,7 @@ components:
           - article
           - input_csat
           - text
+          - incoming_email
         content_attributes:
           type: object
           properties: {}
