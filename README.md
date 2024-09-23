@@ -350,6 +350,7 @@ Class | Method | HTTP request | Description
  - [IntegrationsHookCreatePayload](docs/IntegrationsHookCreatePayload.md)
  - [IntegrationsHookUpdatePayload](docs/IntegrationsHookUpdatePayload.md)
  - [Message](docs/Message.md)
+ - [MessageList](docs/MessageList.md)
  - [PlatformAccount](docs/PlatformAccount.md)
  - [Portal](docs/Portal.md)
  - [PortalCreateUpdatePayload](docs/PortalCreateUpdatePayload.md)

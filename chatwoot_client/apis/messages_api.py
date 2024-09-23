@@ -266,7 +266,7 @@ class MessagesApi(object):
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
         :param int conversation_id: The numeric ID of the conversation (required)
-        :return: list[Message]
+        :return: list[MessageList]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -289,7 +289,7 @@ class MessagesApi(object):
         :param async_req bool
         :param int account_id: The numeric ID of the account (required)
         :param int conversation_id: The numeric ID of the conversation (required)
-        :return: list[Message]
+        :return: list[MessageList]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -349,7 +349,7 @@ class MessagesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Message]',  # noqa: E501
+            response_type='list[MessageList]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

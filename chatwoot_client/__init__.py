@@ -133,6 +133,7 @@ from chatwoot_client.models.integrations_hook import IntegrationsHook
 from chatwoot_client.models.integrations_hook_create_payload import IntegrationsHookCreatePayload
 from chatwoot_client.models.integrations_hook_update_payload import IntegrationsHookUpdatePayload
 from chatwoot_client.models.message import Message
+from chatwoot_client.models.message_list import MessageList
 from chatwoot_client.models.platform_account import PlatformAccount
 from chatwoot_client.models.portal import Portal
 from chatwoot_client.models.portal_create_update_payload import PortalCreateUpdatePayload

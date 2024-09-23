@@ -3435,7 +3435,7 @@ paths:
                 type: array
                 description: Array of messages
                 items:
-                  $ref: '#/components/schemas/message'
+                  $ref: '#/components/schemas/message_list'
         "401":
           description: Unauthorized
           content: {}
@@ -4851,6 +4851,16 @@ components:
           example:
             attribute_key: attribute_value
             priority_conversation_number: 3
+    message_list:
+        type: object
+        properties:
+          payload:
+            type: array
+            items:
+                $ref: '#/components/schemas/message'
+          meta:
+            type: object
+            properties: {}
     message:
       type: object
       properties:
