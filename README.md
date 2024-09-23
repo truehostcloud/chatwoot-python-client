@@ -364,6 +364,7 @@ Class | Method | HTTP request | Description
  - [PublicMessageCreatePayload](docs/PublicMessageCreatePayload.md)
  - [PublicMessageUpdatePayload](docs/PublicMessageUpdatePayload.md)
  - [RequestError](docs/RequestError.md)
+ - [Sender](docs/Sender.md)
  - [Team](docs/Team.md)
  - [TeamCreateUpdatePayload](docs/TeamCreateUpdatePayload.md)
  - [TeamIdTeamMembersBody](docs/TeamIdTeamMembersBody.md)

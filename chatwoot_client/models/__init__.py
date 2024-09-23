@@ -113,6 +113,7 @@ from chatwoot_client.models.public_message import PublicMessage
 from chatwoot_client.models.public_message_create_payload import PublicMessageCreatePayload
 from chatwoot_client.models.public_message_update_payload import PublicMessageUpdatePayload
 from chatwoot_client.models.request_error import RequestError
+from chatwoot_client.models.sender import Sender
 from chatwoot_client.models.team import Team
 from chatwoot_client.models.team_create_update_payload import TeamCreateUpdatePayload
 from chatwoot_client.models.team_id_team_members_body import TeamIdTeamMembersBody

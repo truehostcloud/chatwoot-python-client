@@ -4905,12 +4905,40 @@ components:
           properties: {}
           description: The file object attached to the image
         sender:
-          type: object
-          properties: {}
-          description: User/Agent/AgentBot object
+          $ref: '#/components/schemas/sender'
         conversation_id:
           type: integer
           description: ID of the conversation
+    sender:
+      type: object
+      properties:
+        additional_attributes:
+          type: object
+          properties: {}
+          description: The object containing additional attributes related to the sender
+        custom_attributes:
+          type: object
+          properties: {}
+          description: The object containing custom attributes related to the sender
+        email:
+          type: string
+          description: Email address of the sender
+        id:
+          type: integer
+          description: ID of the sender
+        name:
+          type: string
+          description: The name of the sender
+        phone_number:
+          type: string
+          description: Phone number of the sender
+        type:
+          type: string
+          description: The type of the sender
+          enum:
+          - contact
+          - agent
+          - agent_bot
     user:
       type: object
       properties:

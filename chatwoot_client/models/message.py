@@ -36,7 +36,7 @@ class Message(object):
         'created_at': 'int',
         'private': 'bool',
         'attachment': 'object',
-        'sender': 'object',
+        'sender': 'Sender',
         'conversation_id': 'int'
     }
 
@@ -287,10 +287,9 @@ class Message(object):
     def sender(self):
         """Gets the sender of this Message.  # noqa: E501
 
-        User/Agent/AgentBot object  # noqa: E501
 
         :return: The sender of this Message.  # noqa: E501
-        :rtype: object
+        :rtype: Sender
         """
         return self._sender
 
@@ -298,10 +297,9 @@ class Message(object):
     def sender(self, sender):
         """Sets the sender of this Message.
 
-        User/Agent/AgentBot object  # noqa: E501
 
         :param sender: The sender of this Message.  # noqa: E501
-        :type: object
+        :type: Sender
         """
 
         self._sender = sender
