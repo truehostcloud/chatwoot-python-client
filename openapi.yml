@@ -3432,10 +3432,7 @@ paths:
           content:
             application/json; charset=utf-8:
               schema:
-                type: array
-                description: Array of messages
-                items:
-                  $ref: '#/components/schemas/message_list'
+                $ref: '#/components/schemas/message_list'
         "401":
           description: Unauthorized
           content: {}
@@ -4857,7 +4854,7 @@ components:
           payload:
             type: array
             items:
-                $ref: '#/components/schemas/message'
+              $ref: '#/components/schemas/message'
           meta:
             type: object
             properties: {}
