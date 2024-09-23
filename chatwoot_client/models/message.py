@@ -28,6 +28,7 @@ class Message(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'id': 'int',
         'content': 'str',
         'content_type': 'str',
         'content_attributes': 'object',
@@ -40,6 +41,7 @@ class Message(object):
     }
 
     attribute_map = {
+        'id': 'id',
         'content': 'content',
         'content_type': 'content_type',
         'content_attributes': 'content_attributes',
@@ -51,8 +53,9 @@ class Message(object):
         'conversation_id': 'conversation_id'
     }
 
-    def __init__(self, content=None, content_type=None, content_attributes=None, message_type=None, created_at=None, private=None, attachment=None, sender=None, conversation_id=None):  # noqa: E501
+    def __init__(self, id=None, content=None, content_type=None, content_attributes=None, message_type=None, created_at=None, private=None, attachment=None, sender=None, conversation_id=None):  # noqa: E501
         """Message - a model defined in Swagger"""  # noqa: E501
+        self._id = None
         self._content = None
         self._content_type = None
         self._content_attributes = None
@@ -63,6 +66,8 @@ class Message(object):
         self._sender = None
         self._conversation_id = None
         self.discriminator = None
+        if id is not None:
+            self.id = id
         if content is not None:
             self.content = content
         if content_type is not None:
@@ -81,6 +86,29 @@ class Message(object):
             self.sender = sender
         if conversation_id is not None:
             self.conversation_id = conversation_id
+
+    @property
+    def id(self):
+        """Gets the id of this Message.  # noqa: E501
+
+        ID of the message  # noqa: E501
+
+        :return: The id of this Message.  # noqa: E501
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Message.
+
+        ID of the message  # noqa: E501
+
+        :param id: The id of this Message.  # noqa: E501
+        :type: int
+        """
+
+        self._id = id
 
     @property
     def content(self):

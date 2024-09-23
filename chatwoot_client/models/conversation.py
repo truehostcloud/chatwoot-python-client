@@ -28,13 +28,16 @@ class Conversation(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'id': 'int',
         'messages': 'list[Message]',
         'account_id': 'int',
         'inbox_id': 'int',
         'status': 'str',
-        'timestamp': 'str',
-        'contact_last_seen_at': 'str',
-        'agent_last_seen_at': 'str',
+        'timestamp': 'int',
+        'created_at': 'int',
+        'first_reply_created_at': 'int',
+        'contact_last_seen_at': 'int',
+        'agent_last_seen_at': 'int',
         'last_activity_at': 'int',
         'last_non_activity_message': 'Message',
         'unread_count': 'int',
@@ -43,11 +46,14 @@ class Conversation(object):
     }
 
     attribute_map = {
+        'id': 'id',
         'messages': 'messages',
         'account_id': 'account_id',
         'inbox_id': 'inbox_id',
         'status': 'status',
         'timestamp': 'timestamp',
+        'created_at': 'created_at',
+        'first_reply_created_at': 'first_reply_created_at',
         'contact_last_seen_at': 'contact_last_seen_at',
         'agent_last_seen_at': 'agent_last_seen_at',
         'last_activity_at': 'last_activity_at',
@@ -57,13 +63,16 @@ class Conversation(object):
         'custom_attributes': 'custom_attributes'
     }
 
-    def __init__(self, messages=None, account_id=None, inbox_id=None, status=None, timestamp=None, contact_last_seen_at=None, agent_last_seen_at=None, last_activity_at=None, last_non_activity_message=None, unread_count=None, additional_attributes=None, custom_attributes=None):  # noqa: E501
+    def __init__(self, id=None, messages=None, account_id=None, inbox_id=None, status=None, timestamp=None, created_at=None, first_reply_created_at=None, contact_last_seen_at=None, agent_last_seen_at=None, last_activity_at=None, last_non_activity_message=None, unread_count=None, additional_attributes=None, custom_attributes=None):  # noqa: E501
         """Conversation - a model defined in Swagger"""  # noqa: E501
+        self._id = None
         self._messages = None
         self._account_id = None
         self._inbox_id = None
         self._status = None
         self._timestamp = None
+        self._created_at = None
+        self._first_reply_created_at = None
         self._contact_last_seen_at = None
         self._agent_last_seen_at = None
         self._last_activity_at = None
@@ -72,6 +81,8 @@ class Conversation(object):
         self._additional_attributes = None
         self._custom_attributes = None
         self.discriminator = None
+        if id is not None:
+            self.id = id
         if messages is not None:
             self.messages = messages
         if account_id is not None:
@@ -82,6 +93,10 @@ class Conversation(object):
             self.status = status
         if timestamp is not None:
             self.timestamp = timestamp
+        if created_at is not None:
+            self.created_at = created_at
+        if first_reply_created_at is not None:
+            self.first_reply_created_at = first_reply_created_at
         if contact_last_seen_at is not None:
             self.contact_last_seen_at = contact_last_seen_at
         if agent_last_seen_at is not None:
@@ -96,6 +111,29 @@ class Conversation(object):
             self.additional_attributes = additional_attributes
         if custom_attributes is not None:
             self.custom_attributes = custom_attributes
+
+    @property
+    def id(self):
+        """Gets the id of this Conversation.  # noqa: E501
+
+        ID of the conversation  # noqa: E501
+
+        :return: The id of this Conversation.  # noqa: E501
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Conversation.
+
+        ID of the conversation  # noqa: E501
+
+        :param id: The id of this Conversation.  # noqa: E501
+        :type: int
+        """
+
+        self._id = id
 
     @property
     def messages(self):
@@ -200,7 +238,7 @@ class Conversation(object):
         The time at which conversation was created  # noqa: E501
 
         :return: The timestamp of this Conversation.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._timestamp
 
@@ -211,18 +249,65 @@ class Conversation(object):
         The time at which conversation was created  # noqa: E501
 
         :param timestamp: The timestamp of this Conversation.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._timestamp = timestamp
 
     @property
+    def created_at(self):
+        """Gets the created_at of this Conversation.  # noqa: E501
+
+        The time at which conversation was created  # noqa: E501
+
+        :return: The created_at of this Conversation.  # noqa: E501
+        :rtype: int
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this Conversation.
+
+        The time at which conversation was created  # noqa: E501
+
+        :param created_at: The created_at of this Conversation.  # noqa: E501
+        :type: int
+        """
+
+        self._created_at = created_at
+
+    @property
+    def first_reply_created_at(self):
+        """Gets the first_reply_created_at of this Conversation.  # noqa: E501
+
+        The time at which the first reply was created by the agent  # noqa: E501
+
+        :return: The first_reply_created_at of this Conversation.  # noqa: E501
+        :rtype: int
+        """
+        return self._first_reply_created_at
+
+    @first_reply_created_at.setter
+    def first_reply_created_at(self, first_reply_created_at):
+        """Sets the first_reply_created_at of this Conversation.
+
+        The time at which the first reply was created by the agent  # noqa: E501
+
+        :param first_reply_created_at: The first_reply_created_at of this Conversation.  # noqa: E501
+        :type: int
+        """
+
+        self._first_reply_created_at = first_reply_created_at
+
+    @property
     def contact_last_seen_at(self):
         """Gets the contact_last_seen_at of this Conversation.  # noqa: E501
 
+        The time at which the contact was last seen  # noqa: E501
 
         :return: The contact_last_seen_at of this Conversation.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._contact_last_seen_at
 
@@ -230,9 +315,10 @@ class Conversation(object):
     def contact_last_seen_at(self, contact_last_seen_at):
         """Sets the contact_last_seen_at of this Conversation.
 
+        The time at which the contact was last seen  # noqa: E501
 
         :param contact_last_seen_at: The contact_last_seen_at of this Conversation.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._contact_last_seen_at = contact_last_seen_at
@@ -241,9 +327,10 @@ class Conversation(object):
     def agent_last_seen_at(self):
         """Gets the agent_last_seen_at of this Conversation.  # noqa: E501
 
+        The time at which the agent was last seen  # noqa: E501
 
         :return: The agent_last_seen_at of this Conversation.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._agent_last_seen_at
 
@@ -251,9 +338,10 @@ class Conversation(object):
     def agent_last_seen_at(self, agent_last_seen_at):
         """Sets the agent_last_seen_at of this Conversation.
 
+        The time at which the agent was last seen  # noqa: E501
 
         :param agent_last_seen_at: The agent_last_seen_at of this Conversation.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._agent_last_seen_at = agent_last_seen_at

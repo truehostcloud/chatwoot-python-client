@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **int** | ID of the message | [optional] 
 **content** | **str** | The text content of the message | [optional] 
 **content_type** | **str** | The type of the template message | [optional] 
 **content_attributes** | **object** | The content attributes for each content_type | [optional] 

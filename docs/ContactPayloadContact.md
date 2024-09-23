@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **int** | ID of the contact | [optional] 
 **email** | **str** | Email address of the contact | [optional] 
 **name** | **str** | The name of the contact | [optional] 
 **phone_number** | **str** | Phone number of the contact | [optional] 

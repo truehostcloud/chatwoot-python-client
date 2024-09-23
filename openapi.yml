@@ -3437,7 +3437,6 @@ paths:
                 items:
                   type: object
                   allOf:
-                  - $ref: '#/components/schemas/generic_id'
                   - $ref: '#/components/schemas/message'
         "401":
           description: Unauthorized
@@ -3477,7 +3476,6 @@ paths:
             application/json; charset=utf-8:
               schema:
                 allOf:
-                - $ref: '#/components/schemas/generic_id'
                 - $ref: '#/components/schemas/message'
         "403":
           description: Access denied
@@ -4764,6 +4762,9 @@ components:
             contact:
               type: object
               properties:
+                id:
+                  type: integer
+                  description: ID of the contact
                 email:
                   type: string
                   description: Email address of the contact
@@ -4796,6 +4797,9 @@ components:
     conversation:
       type: object
       properties:
+        id:
+          type: integer
+          description: ID of the conversation
         messages:
           type: array
           items:
@@ -4814,12 +4818,20 @@ components:
           - resolved
           - pending
         timestamp:
-          type: string
+          type: integer
           description: The time at which conversation was created
+        created_at:
+          type: integer
+          description: The time at which conversation was created
+        first_reply_created_at:
+          type: integer
+          description: The time at which the first reply was created by the agent
         contact_last_seen_at:
-          type: string
+          type: integer
+          description: The time at which the contact was last seen
         agent_last_seen_at:
-          type: string
+          type: integer
+          description: The time at which the agent was last seen
         last_activity_at:
           type: integer
           description: The time at which the last activity happened in the conversation
@@ -4844,6 +4856,9 @@ components:
     message:
       type: object
       properties:
+        id:
+          type: integer
+          description: ID of the message
         content:
           type: string
           description: The text content of the message
@@ -5794,7 +5809,6 @@ components:
             - offline
     contact_base:
       allOf:
-      - $ref: '#/components/schemas/generic_id'
       - $ref: '#/components/schemas/contact'
     contact_list:
       type: array
@@ -5802,7 +5816,6 @@ components:
       items:
         type: object
         allOf:
-        - $ref: '#/components/schemas/generic_id'
         - $ref: '#/components/schemas/contact'
     contact_conversations:
       type: array
@@ -5860,7 +5873,6 @@ components:
               items:
                 type: object
                 allOf:
-                - $ref: '#/components/schemas/generic_id'
                 - $ref: '#/components/schemas/conversation'
                 - type: object
                   properties:
@@ -5904,7 +5916,6 @@ components:
           items:
             type: object
             allOf:
-              - $ref: '#/components/schemas/generic_id'
               - $ref: '#/components/schemas/conversation'
               - type: object
                 properties:

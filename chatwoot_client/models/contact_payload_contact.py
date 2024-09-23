@@ -28,6 +28,7 @@ class ContactPayloadContact(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'id': 'int',
         'email': 'str',
         'name': 'str',
         'phone_number': 'str',
@@ -38,6 +39,7 @@ class ContactPayloadContact(object):
     }
 
     attribute_map = {
+        'id': 'id',
         'email': 'email',
         'name': 'name',
         'phone_number': 'phone_number',
@@ -47,8 +49,9 @@ class ContactPayloadContact(object):
         'contact_inboxes': 'contact_inboxes'
     }
 
-    def __init__(self, email=None, name=None, phone_number=None, thumbnail=None, additional_attributes=None, custom_attributes=None, contact_inboxes=None):  # noqa: E501
+    def __init__(self, id=None, email=None, name=None, phone_number=None, thumbnail=None, additional_attributes=None, custom_attributes=None, contact_inboxes=None):  # noqa: E501
         """ContactPayloadContact - a model defined in Swagger"""  # noqa: E501
+        self._id = None
         self._email = None
         self._name = None
         self._phone_number = None
@@ -57,6 +60,8 @@ class ContactPayloadContact(object):
         self._custom_attributes = None
         self._contact_inboxes = None
         self.discriminator = None
+        if id is not None:
+            self.id = id
         if email is not None:
             self.email = email
         if name is not None:
@@ -71,6 +76,29 @@ class ContactPayloadContact(object):
             self.custom_attributes = custom_attributes
         if contact_inboxes is not None:
             self.contact_inboxes = contact_inboxes
+
+    @property
+    def id(self):
+        """Gets the id of this ContactPayloadContact.  # noqa: E501
+
+        ID of the contact  # noqa: E501
+
+        :return: The id of this ContactPayloadContact.  # noqa: E501
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ContactPayloadContact.
+
+        ID of the contact  # noqa: E501
+
+        :param id: The id of this ContactPayloadContact.  # noqa: E501
+        :type: int
+        """
+
+        self._id = id
 
     @property
     def email(self):
