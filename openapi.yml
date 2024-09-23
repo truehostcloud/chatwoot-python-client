@@ -3435,9 +3435,7 @@ paths:
                 type: array
                 description: Array of messages
                 items:
-                  type: object
-                  allOf:
-                  - $ref: '#/components/schemas/message'
+                  $ref: '#/components/schemas/message'
         "401":
           description: Unauthorized
           content: {}

@@ -129,7 +129,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_all_messages**
-> list[object] list_all_messages(account_id, conversation_id)
+> list[Message] list_all_messages(account_id, conversation_id)
 
 Get messages
 
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**list[object]**
+[**list[Message]**](Message.md)
 
 ### Authorization
 
