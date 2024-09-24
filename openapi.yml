@@ -4939,6 +4939,7 @@ components:
           - contact
           - agent
           - agent_bot
+          - user
     user:
       type: object
       properties:

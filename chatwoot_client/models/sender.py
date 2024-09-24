@@ -230,7 +230,7 @@ class Sender(object):
         :param type: The type of this Sender.  # noqa: E501
         :type: str
         """
-        allowed_values = ["contact", "agent", "agent_bot"]  # noqa: E501
+        allowed_values = ["contact", "agent", "agent_bot", "user"]  # noqa: E501
         if type not in allowed_values:
             raise ValueError(
                 "Invalid value for `type` ({0}), must be one of {1}"  # noqa: E501
