@@ -2455,6 +2455,16 @@ paths:
         schema:
           type: integer
           default: 1
+      - name: sort_by
+        in: query
+        description: The attribute by which list should be sorted
+        schema:
+          type: string
+          enum:
+          - last_activity_at_asc
+          - last_activity_at_desc
+          - created_at_asc
+          - created_at_desc
       responses:
         "200":
           description: Success

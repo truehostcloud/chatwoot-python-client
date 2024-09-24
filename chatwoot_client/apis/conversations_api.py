@@ -161,6 +161,7 @@ class ConversationsApi(object):
         :param int team_id:
         :param list[str] labels:
         :param int page: paginate through conversations
+        :param str sort_by: The attribute by which list should be sorted
         :return: ConversationList
                  If the method is called asynchronously,
                  returns the request thread.
@@ -190,12 +191,13 @@ class ConversationsApi(object):
         :param int team_id:
         :param list[str] labels:
         :param int page: paginate through conversations
+        :param str sort_by: The attribute by which list should be sorted
         :return: ConversationList
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['account_id', 'assignee_type', 'status', 'q', 'inbox_id', 'team_id', 'labels', 'page']  # noqa: E501
+        all_params = ['account_id', 'assignee_type', 'status', 'q', 'inbox_id', 'team_id', 'labels', 'page', 'sort_by']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -237,6 +239,8 @@ class ConversationsApi(object):
             collection_formats['labels'] = 'csv'  # noqa: E501
         if 'page' in params:
             query_params.append(('page', params['page']))  # noqa: E501
+        if 'sort_by' in params:
+            query_params.append(('sort_by', params['sort_by']))  # noqa: E501
 
         header_params = {}
 

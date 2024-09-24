@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **conversation_list**
-> ConversationList conversation_list(account_id, assignee_type=assignee_type, status=status, q=q, inbox_id=inbox_id, team_id=team_id, labels=labels, page=page)
+> ConversationList conversation_list(account_id, assignee_type=assignee_type, status=status, q=q, inbox_id=inbox_id, team_id=team_id, labels=labels, page=page, sort_by=sort_by)
 
 Conversations List
 
@@ -106,10 +106,11 @@ inbox_id = 56 # int |  (optional)
 team_id = 56 # int |  (optional)
 labels = ['labels_example'] # list[str] |  (optional)
 page = 1 # int | paginate through conversations (optional) (default to 1)
+sort_by = 'sort_by_example' # str | The attribute by which list should be sorted (optional)
 
 try:
     # Conversations List
-    api_response = api_instance.conversation_list(account_id, assignee_type=assignee_type, status=status, q=q, inbox_id=inbox_id, team_id=team_id, labels=labels, page=page)
+    api_response = api_instance.conversation_list(account_id, assignee_type=assignee_type, status=status, q=q, inbox_id=inbox_id, team_id=team_id, labels=labels, page=page, sort_by=sort_by)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ConversationsApi->conversation_list: %s\n" % e)
@@ -127,6 +128,7 @@ Name | Type | Description  | Notes
  **team_id** | **int**|  | [optional] 
  **labels** | [**list[str]**](str.md)|  | [optional] 
  **page** | **int**| paginate through conversations | [optional] [default to 1]
+ **sort_by** | **str**| The attribute by which list should be sorted | [optional] 
 
 ### Return type
 
