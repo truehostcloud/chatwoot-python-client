@@ -5914,12 +5914,12 @@ components:
             payload:
               $ref: '#/components/schemas/conversation_list_payload'
     conversation_list_payload:
-      type: object
       allOf:
         - $ref: '#/components/schemas/conversation'
-      properties:
-        meta:
-          $ref: '#/components/schemas/conversation_list_payload_meta'
+        - type: object
+          properties:
+            meta:
+              $ref: '#/components/schemas/conversation_list_payload_meta'
     conversation_list_payload_meta:
       type: object
       properties:
