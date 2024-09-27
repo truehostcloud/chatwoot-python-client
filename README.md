@@ -321,6 +321,7 @@ Class | Method | HTTP request | Description
  - [ConversationListData](docs/ConversationListData.md)
  - [ConversationListDataMeta](docs/ConversationListDataMeta.md)
  - [ConversationListPayload](docs/ConversationListPayload.md)
+ - [ConversationListPayloadInner](docs/ConversationListPayloadInner.md)
  - [ConversationListPayloadMeta](docs/ConversationListPayloadMeta.md)
  - [ConversationMessageCreate](docs/ConversationMessageCreate.md)
  - [ConversationSender](docs/ConversationSender.md)
