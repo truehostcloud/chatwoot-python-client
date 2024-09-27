@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **meta** | [**ConversationListDataMeta**](ConversationListDataMeta.md) |  | [optional] 
-**payload** | [**ConversationListPayload**](ConversationListPayload.md) |  | [optional] 
+**payload** | [**list[ConversationListPayload]**](ConversationListPayload.md) | array of conversations | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

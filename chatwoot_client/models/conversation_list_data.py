@@ -29,7 +29,7 @@ class ConversationListData(object):
     """
     swagger_types = {
         'meta': 'ConversationListDataMeta',
-        'payload': 'ConversationListPayload'
+        'payload': 'list[ConversationListPayload]'
     }
 
     attribute_map = {
@@ -72,9 +72,10 @@ class ConversationListData(object):
     def payload(self):
         """Gets the payload of this ConversationListData.  # noqa: E501
 
+        array of conversations  # noqa: E501
 
         :return: The payload of this ConversationListData.  # noqa: E501
-        :rtype: ConversationListPayload
+        :rtype: list[ConversationListPayload]
         """
         return self._payload
 
@@ -82,9 +83,10 @@ class ConversationListData(object):
     def payload(self, payload):
         """Sets the payload of this ConversationListData.
 
+        array of conversations  # noqa: E501
 
         :param payload: The payload of this ConversationListData.  # noqa: E501
-        :type: ConversationListPayload
+        :type: list[ConversationListPayload]
         """
 
         self._payload = payload

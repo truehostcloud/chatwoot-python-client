@@ -5912,71 +5912,71 @@ components:
                 all_count:
                   type: integer
             payload:
-              $ref: '#/components/schemas/conversation_list_payload'
+              type: array
+              description: array of conversations
+              items:
+                $ref: '#/components/schemas/conversation_list_payload'
     conversation_list_payload:
-      type: array
-      description: array of conversations
-      items:
-        type: object
-        properties:
-          meta:
-            $ref: '#/components/schemas/conversation_list_payload_meta'
-          id:
-            type: integer
-            description: ID of the conversation
-          messages:
-            type: array
-            items:
-              $ref: '#/components/schemas/message'
-          account_id:
-            type: integer
-            description: Account Id
-          inbox_id:
-            type: integer
-            description: ID of the inbox
-          status:
-            type: string
-            description: The status of the conversation
-            enum:
-              - open
-              - resolved
-              - pending
-          timestamp:
-            type: integer
-            description: The time at which conversation was created
-          created_at:
-            type: integer
-            description: The time at which conversation was created
-          first_reply_created_at:
-            type: integer
-            description: The time at which the first reply was created by the agent
-          contact_last_seen_at:
-            type: integer
-            description: The time at which the contact was last seen
-          agent_last_seen_at:
-            type: integer
-            description: The time at which the agent was last seen
-          last_activity_at:
-            type: integer
-            description: The time at which the last activity happened in the conversation
-          last_non_activity_message:
+      type: object
+      properties:
+        meta:
+          $ref: '#/components/schemas/conversation_list_payload_meta'
+        id:
+          type: integer
+          description: ID of the conversation
+        messages:
+          type: array
+          items:
             $ref: '#/components/schemas/message'
-          unread_count:
-            type: integer
-            description: The number of unread messages
-          additional_attributes:
-            type: object
-            properties: { }
-            description: The object containing additional attributes related to the
-              conversation
-          custom_attributes:
-            type: object
-            properties: { }
-            description: "The object to save custom attributes for conversation, accepts\
-              \ custom attributes key and value"
-            example:
-              attribute_key: attribute_value
-              priority_conversation_number: 3
+        account_id:
+          type: integer
+          description: Account Id
+        inbox_id:
+          type: integer
+          description: ID of the inbox
+        status:
+          type: string
+          description: The status of the conversation
+          enum:
+            - open
+            - resolved
+            - pending
+        timestamp:
+          type: integer
+          description: The time at which conversation was created
+        created_at:
+          type: integer
+          description: The time at which conversation was created
+        first_reply_created_at:
+          type: integer
+          description: The time at which the first reply was created by the agent
+        contact_last_seen_at:
+          type: integer
+          description: The time at which the contact was last seen
+        agent_last_seen_at:
+          type: integer
+          description: The time at which the agent was last seen
+        last_activity_at:
+          type: integer
+          description: The time at which the last activity happened in the conversation
+        last_non_activity_message:
+          $ref: '#/components/schemas/message'
+        unread_count:
+          type: integer
+          description: The number of unread messages
+        additional_attributes:
+          type: object
+          properties: { }
+          description: The object containing additional attributes related to the
+            conversation
+        custom_attributes:
+          type: object
+          properties: { }
+          description: "The object to save custom attributes for conversation, accepts\
+            \ custom attributes key and value"
+          example:
+            attribute_key: attribute_value
+            priority_conversation_number: 3
     conversation_list_payload_meta:
       type: object
       properties:
