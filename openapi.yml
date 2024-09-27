@@ -5851,6 +5851,7 @@ components:
             enum:
             - online
             - offline
+            - busy
     contact_base:
       allOf:
       - $ref: '#/components/schemas/contact'
@@ -6000,6 +6001,7 @@ components:
           enum:
           - online
           - offline
+          - busy
         email:
           type: string
           description: Email address of the sender
@@ -6040,6 +6042,7 @@ components:
           enum:
           - online
           - offline
+          - busy
         email:
           type: string
           description: Email address of the assignee
