@@ -4887,6 +4887,7 @@ components:
           - form
           - input_csat
           - incoming_email
+          - input_email
         content_attributes:
           type: object
           properties: {}
@@ -5536,6 +5537,7 @@ components:
           - input_csat
           - text
           - incoming_email
+          - input_email
         content_attributes:
           type: object
           properties: {}
