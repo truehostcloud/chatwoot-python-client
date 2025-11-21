@@ -91,7 +91,7 @@ class ConversationStatusTogglePayload(object):
         :param current_status: The current_status of this ConversationStatusTogglePayload.  # noqa: E501
         :type: str
         """
-        allowed_values = ["open", "resolved"]  # noqa: E501
+        allowed_values = ["open", "resolved", "pending", "snoozed"]  # noqa: E501
         if current_status not in allowed_values:
             raise ValueError(
                 "Invalid value for `current_status` ({0}), must be one of {1}"  # noqa: E501

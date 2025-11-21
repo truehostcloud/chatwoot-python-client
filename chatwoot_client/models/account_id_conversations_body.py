@@ -219,7 +219,7 @@ class AccountIdConversationsBody(object):
         :param status: The status of this AccountIdConversationsBody.  # noqa: E501
         :type: str
         """
-        allowed_values = ["open", "resolved", "pending"]  # noqa: E501
+        allowed_values = ["open", "resolved", "pending", "snoozed"]  # noqa: E501
         if status not in allowed_values:
             raise ValueError(
                 "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501

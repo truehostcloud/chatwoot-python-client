@@ -102,7 +102,7 @@ class AgentsIdBody(object):
         :param availability: The availability of this AgentsIdBody.  # noqa: E501
         :type: str
         """
-        allowed_values = ["available", "busy", "offline", "online"]  # noqa: E501
+        allowed_values = ["available", "busy", "offline"]  # noqa: E501
         if availability not in allowed_values:
             raise ValueError(
                 "Invalid value for `availability` ({0}), must be one of {1}"  # noqa: E501

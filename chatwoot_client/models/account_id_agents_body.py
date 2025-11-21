@@ -160,7 +160,7 @@ class AccountIdAgentsBody(object):
         :param availability_status: The availability_status of this AccountIdAgentsBody.  # noqa: E501
         :type: str
         """
-        allowed_values = ["available", "busy", "offline", "online"]  # noqa: E501
+        allowed_values = ["available", "busy", "offline"]  # noqa: E501
         if availability_status not in allowed_values:
             raise ValueError(
                 "Invalid value for `availability_status` ({0}), must be one of {1}"  # noqa: E501
