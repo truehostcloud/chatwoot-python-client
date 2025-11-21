@@ -1112,6 +1112,7 @@ paths:
                   - available
                   - busy
                   - offline
+                  - online
                 auto_offline:
                   type: boolean
                   description: Whether the availability status of agent is configured
@@ -1202,6 +1203,7 @@ paths:
                   - available
                   - busy
                   - offline
+                  - online
                 auto_offline:
                   type: boolean
                   description: Whether the availability status of agent is configured
@@ -5018,6 +5020,7 @@ components:
           - available
           - busy
           - offline
+          - online
         auto_offline:
           type: boolean
           description: Whether the availability status of agent is configured to go
@@ -5857,6 +5860,7 @@ components:
             - online
             - offline
             - busy
+            - available
     contact_base:
       allOf:
       - $ref: '#/components/schemas/contact'
@@ -6008,6 +6012,7 @@ components:
           - online
           - offline
           - busy
+          - available
         email:
           type: string
           description: Email address of the sender
@@ -6049,6 +6054,7 @@ components:
           - online
           - offline
           - busy
+          - available
         email:
           type: string
           description: Email address of the assignee
